@@ -1,0 +1,63 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">使用指南</view>
+    <view class="page__desc">Pblender-密码搅拌机</view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-article">
+      <view class="weui-article__section">
+        <view class="weui-article__p">
+          网站数据泄露事故频发，在当今的互联网环境中所有账号公用一个密码是不安全的。一旦你的密码被某个网站泄露且被黑客破解，你的其他 账号也将面临威胁。我们希望我们的每个账号都使用不同的且足够复杂的密码，但是随着账号的增多，要记忆大量的密码会变得越来越困难。
+        </view>
+        <view class="weui-article__p">
+          <text>
+          当然，要管理很多的密码我们可以选择记在本子上，离线的存储器中或是使用密码管理软件。记在本子上或是离线的存储器中会牺牲便携性。使用密码管理软件也会有文件加密和加密文件同步问题。相信很多人并不喜欢将自己的密码托管给第三方管理，于是我们需要这样的一个工具：\n
+          1. 它可以帮助我们为不同的账号分配不同的安全密码；\n
+          2. 它不保存我们的任何数据；\n
+          3. 所有与密码相关的信息只保存在我们的大脑里；\n
+          4. 我们只需要记住很少的信息就可以达到这个目标。\n
+        </text>
+
+        </view>
+      </view>
+
+      <view class="weui-article__section">
+        <view class="weui-article__title">Pblender是什么</view>
+        <view class="weui-article__p">
+          Pblender 是一个复杂密码生成小程序，你只需要记住你的“主密码”和为不同的账号设置的不同的“区分码”就可以，通过“主密码”和不同的“区分码”Pblender会计算生成不同的复杂密码。流程如下图所示：
+          <image class="weui-article__img" src="images/pblender-flow.png" mode="aspectFit" />
+        </view>
+      </view>
+
+      <view class="weui-article__section">
+        <view class="weui-article__title">如何使用</view>
+        <view class="weui-article__section">
+
+          <view class="weui-article__h3">1. 想一个没使用过不包含个人信息的主密码</view>
+          <view class="weui-article__p">
+            主密码可以是数字，符号，大小写字母，不要包含个人信息（姓名全拼，生日，电话号码等等）长度最好6位以上并且以前从未使用过。
+          </view>
+        </view>
+
+        <view class="weui-article__h3">2. 填写区分码，Pblender将自动计算新密码</view>
+        <view class="weui-article__p">
+          区分码可以是数字，符号，大小写字母以及汉字，比如微信密码区分码可以是:"weixin","wx123","微信"等等，不同的区分码会生成完全不同的密码。
+        </view>
+
+        <view class="weui-article__h3">3. 修改原账号密码为Pblender生成的新密码</view>
+        <view class="weui-article__p">
+          点击“复制”按钮复制Pblender新生成的密码，并将原来账号的密码修改为新密码。下次登录需要填写密码的时候打开Pblender输入“主密码”和“区分码”就可以得到登录密码。
+        </view>
+      </view>
+
+    </view>
+
+    <view class="weui-footer">
+      <view class="weui-footer__text">本程序不会存储您的任何数据，源码链接:</view>
+      <view class="weui-footer__links">
+        <navigator url="" class="weui-footer__link">https://github.com/jerzygao/pblender</navigator>
+      </view>
+    </view>
+
+  </view>
+</view>

@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<view class="page">
+
+  <view class="page__hd">
+    <view class="page__title">Pblender-密码搅拌机</view>
+    <view class="page__desc">Pblender 是一个复杂密码生成小程序，你只需要记住你的“主密码”，为不同的账号设置不同的“区分码”，通过Pblender的计算生成不同的复杂密码。既可以保障自己账号密码的安全性，又不用记忆多个复杂密码。</view>
+  </view>
+
+  <view class="weui-cells__title">1. 输入主密码+账号区分码</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+     <view class="weui-cell__hd">
+        <view class="weui-label">主密码</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input id="password" type="password" class="weui-input" placeholder="请输入主密码" bindblur="passWordChange" bindinput="passWordChange" />
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">区分码</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input id="key" class="weui-input" placeholder="请输入区分码" bindblur="userKeyChange" bindinput="userKeyChange" />
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells__title">2. 复制下方的新密码</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <input id="pwvalue" class="weui-input" value='{{newPassWord}}' disabled='true' />
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-btn-area">
+    <button class="weui-btn" type="primary" bindtap="copyPwd" >复制</button>
+  </view>
+
+</view>

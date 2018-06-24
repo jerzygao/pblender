@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/help/help"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "密码搅拌机",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "color": "#707070",
+    "selectedColor": "#1296db",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath":"images/blender0.png",
+        "selectedIconPath":"images/blender1.png",
+        "text": "生成密码"
+      },
+      {
+        "pagePath": "pages/help/help",
+        "iconPath": "images/help0.png",
+        "selectedIconPath": "images/help1.png",
+        "text": "使用说明"
+      }
+    ]
+  }
+}
